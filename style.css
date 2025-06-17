@@ -19,7 +19,7 @@
 }
 
 body {
-    width: 1024px;
+    width: 100vw;
     background-color: var(--color-background);
 }
 
@@ -76,7 +76,10 @@ p {
 }
 
 
-
+.full-image {
+margin-top: -2rem;
+width: 100%;
+}
 
 button {
     padding: 1rem 2rem;
@@ -126,7 +129,7 @@ header nav ul {
     color: var(--color-green-500);
 }
 
-.over {
+.over, .professionals {
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -135,17 +138,17 @@ header nav ul {
     align-items: center;
 }
 
-.over .h1 {
+.over .h1, .professionals .h1 {
     text-align: center;
     padding-bottom: 2rem;
 }
 
-.over .cards {
+.over .cards, .professionals .cards {
     display: flex;
     gap: 1rem;
 }
 
-.over .cards .card{
+.over .cards .card, .professionals .cards .card{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -156,12 +159,12 @@ header nav ul {
     border:.5rem solid var(--color-red-600);
 }
 
-.over .cards .card:last-of-type {
+.over .cards .card:last-of-type, .professionals .cards .card:last-of-type {
     background-color: var(--color-yellow-500);
     color: var(--color-yellow-700);
     border:.5rem solid var(--color-yellow-600);
 }
-.over .cards .card:first-of-type{
+.over .cards .card:first-of-type, .professionals .cards .card:first-of-type{
     background-color: var(--color-green-500);
     color: var(--color-green-700);
     border: .5rem solid var(--color-green-600);
@@ -193,13 +196,25 @@ header nav ul {
 }
 
 .veilig {
-padding: 2rem 0 2rem 0;
-background-color: var(--color-background-2);
+    padding: 2rem 0 2rem 0;
+    background-color: var(--color-background-2);
 }
+
+.professionals {
+    background-color: var(--color-background);
+}
+.professionals .h4 {
+    text-align: center;
+}
+
+
 .verbeteren {
     display: flex;
+    gap: 5rem;
     justify-content: center;
-    
+    align-items: center;
+    background-color: var(--color-yellow-500);
+    padding: 4rem 2rem;
 }
 
 .verbeteren > * {
@@ -208,4 +223,5 @@ background-color: var(--color-background-2);
 
 .verbeteren-step {
     display: flex;
+    align-items: center;
 }
