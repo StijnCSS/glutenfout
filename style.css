@@ -191,7 +191,7 @@ header nav ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 99%;
-    aspect-ratio: 300 / 348;
+    /* aspect-ratio: 300 / 348; */
 }
 
 .over-card:nth-of-type(1),
@@ -365,8 +365,7 @@ color: white;}
     background-repeat: no-repeat;
     background-position: center;
     background-size: 99%;
-    aspect-ratio: 309 / 200;
-    /* or just aspect-ratio: 1.545; */
+    /* aspect-ratio: 309 / 200; */
 }
 
 .gevolgen-card .h4 {
