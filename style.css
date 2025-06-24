@@ -161,6 +161,7 @@ header nav ul {
     flex-direction: column;
     padding: var(--vertical-padding) var(--horizontal-padding);
     max-width: var(--max-width);
+    max-width: 1170px;
 }
 
 
@@ -186,55 +187,11 @@ header nav ul {
     gap: 1rem;
     flex: 1;
     color: var(--color-red-700);
+    padding: 4rem 2.5rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 99%;
-    
-    /* Fallback for older browsers using padding-bottom hack */
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 116%; /* 348/300 * 100 = 116% for 300/348 aspect ratio */
-    
-    /* Modern browsers with aspect-ratio support */
     aspect-ratio: 300 / 348;
-}
-
-/* Support for aspect-ratio - reset padding when supported */
-@supports (aspect-ratio: 1) {
-    .over-card,
-    .professionals-card {
-        height: auto;
-        padding-bottom: 0;
-        padding: 4rem 2.5rem; /* Restore original padding */
-    }
-}
-
-/* Content positioning for the padding-bottom hack */
-.over-card > *,
-.professionals-card > * {
-    position: absolute;
-    top: 4rem;
-    left: 2.5rem;
-    right: 2.5rem;
-    bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 1rem;
-}
-
-/* Reset positioning for modern browsers */
-@supports (aspect-ratio: 1) {
-    .over-card > *,
-    .professionals-card > * {
-        position: static;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-    }
 }
 
 .over-card:nth-of-type(1),
@@ -376,11 +333,10 @@ footer {
     width: 100%;
     padding: 1rem 2rem;
     background-color: var(--color-text);
-
-    & p {
-        color: white;
-    }
 }
+
+.credits p {
+color: white;}
 
 .gevolgen {
     display: flex;
@@ -389,6 +345,7 @@ footer {
     align-items: center;
     flex-direction: column;
     padding: var(--vertical-padding) var(--horizontal-padding);
+    max-width: 1017px;
 }
 
 .gevolgen-cards {
@@ -400,50 +357,16 @@ footer {
 .gevolgen-card {
     display: flex;
     justify-content: center;
+    padding: 2rem;
     align-items: center;
-    
-    /* Fallback for older browsers */
-    position: relative;
+    height: 200px;
     width: 100%;
-    height: 0;
-    padding-bottom: 64.7%; /* 200/309 * 100 = 64.7% for 309/200 aspect ratio */
-    
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: 99%;
-    
-    /* Modern browsers with aspect-ratio support */
     aspect-ratio: 309 / 200;
-}
-
-/* Support for aspect-ratio - reset padding when supported */
-@supports (aspect-ratio: 1) {
-    .gevolgen-card {
-        height: 200px;
-        padding-bottom: 0;
-        padding: 2rem; /* Restore original padding */
-    }
-}
-
-/* Content positioning for the padding-bottom hack */
-.gevolgen-card > * {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% - 4rem);
-    text-align: center;
-}
-
-/* Reset positioning for modern browsers */
-@supports (aspect-ratio: 1) {
-    .gevolgen-card > * {
-        position: static;
-        top: auto;
-        left: auto;
-        transform: none;
-        width: auto;
-    }
+    /* or just aspect-ratio: 1.545; */
 }
 
 .gevolgen-card .h4 {
