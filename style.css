@@ -375,7 +375,7 @@ footer {
 }
 
 .gevolgen-card:nth-of-type(3n+1) {
-    background-image: url(/images/yellow-squiglge.svg);
+    background-image: url(./images/yellow-squiglge.svg);
 
     /* color: var(--color-yellow-700);
     border: .5rem solid var(--color-yellow-600);
@@ -383,14 +383,14 @@ footer {
 }
 
 .gevolgen-card:nth-of-type(3n+2) {
-    background-image: url(/images/green-squiggle.svg);
+    background-image: url(./images/green-squiggle.svg);
     /* color: var(--color-green-700);
     border: .5rem solid var(--color-green-600);
     background-color: var(--color-green-500);*/
 }
 
 .gevolgen-card:nth-of-type(3n) {
-    background-image: url(/images/red-squiggle.svg);
+    background-image: url(./images/red-squiggle.svg);
     /* color: var(--color-red-700);
     border: .5rem solid var(--color-red-600);
     background-color: var(--color-red-500); */
