@@ -274,7 +274,7 @@ align-items: center;}
     height: 30%;
 }
 
-.over-card div {
+.over-card div, .professionals-card div {
     display: flex;
     gap: 1rem;
     flex-direction: column;
