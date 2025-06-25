@@ -134,8 +134,8 @@ main {
     font-family: 'Changa One', sans-serif;
     position: absolute;
     font-size: 1.5rem;
-    top: 6rem;
-    left: -4rem;
+    top: 6.5rem;
+    left: -7rem;
     transform: rotate(-12deg);
     color: var(--color-text);
 }
@@ -155,20 +155,17 @@ main {
 .button-img {
     width: fit-content;
 }
+
 .professionals-wrapper .script {
-top: 41.5rem;
-left: 15rem;
+top: 44rem;
+left: 16rem;
 transform: rotate(5deg);
 }
 
 .professionals-wrapper .arrow {
-top: 38rem;
+top: 40rem;
 left: 21rem;
 transform: rotate(180deg) scale(-1);
-}
-
-.professionals-wrapper .button-img{
-    width: 30%
 }
 
 button {
