@@ -131,12 +131,20 @@ main {
     padding: var(--vertical-padding) var(--horizontal-padding);
 }
 .script {
-    font-family: 'geist', sans-serif;
+    font-family: 'Changa One', sans-serif;
     position: absolute;
+    font-size: 1.5rem;
     top: 6rem;
-    left: -3rem;
+    left: -4rem;
     transform: rotate(-12deg);
     color: var(--color-text);
+}
+
+.arrow {
+    position: absolute;
+    top: 9rem;
+    left: -2.5rem;
+    transform: rotate(-100deg);
 }
 
 .full-image {
@@ -148,10 +156,17 @@ main {
     width: fit-content;
 }
 .professionals-wrapper .script {
-top: 40rem;
-left: 17rem;
+top: 41.5rem;
+left: 15rem;
 transform: rotate(5deg);
 }
+
+.professionals-wrapper .arrow {
+top: 38rem;
+left: 21rem;
+transform: rotate(180deg) scale(-1);
+}
+
 .professionals-wrapper .button-img{
     width: 30%
 }
@@ -316,7 +331,9 @@ align-items: center;}
 }
 
 .steps .h4 {
+    font-size: 24px;
     font-weight: 800;
+    text-transform: none;
 }
 
 .professionals {
@@ -441,6 +458,7 @@ color: white;}
     border: .5rem solid var(--color-red-600);
     background-color: var(--color-red-500); */
 }
+
 
 
 
