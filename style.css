@@ -153,7 +153,7 @@ main {
 }
 
 .button-img {
-    width: fit-content;
+    width: 30%;
 }
 
 .professionals-wrapper .script {
@@ -216,7 +216,7 @@ header nav ul {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    padding: var(--vertical-padding) var(--horizontal-padding);
+    padding: var(--vertical-padding) var(--horizontal-padding) 8rem var(--horizontal-padding) ;
     width: 1170px;
 }
 
